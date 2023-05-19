@@ -1,3 +1,4 @@
+<!----
 <!DOCTYPE html>
 <html lang="en">
 
@@ -173,3 +174,102 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <script src="app.js"></script>
+</head>
+<body>
+  <h1>Login</h1>
+  <form>
+    <label for="username">Kullanıcı Adı (E-posta):</label>
+    <input type="text" id="username" required><br>
+
+    <label for="password">Şifre:</label>
+    <input type="password" id="password" required><br>
+
+    <input type="submit" value="Giriş Yap" onclick="login()">
+  </form>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Giriş Yap / Kayıt Ol</title>
+  <script src="app.js"></script>
+</head>
+<body>
+  <h1>Giriş Yap / Kayıt Ol</h1>
+  <div id="loginPage">
+    <h2>Giriş Yap</h2>
+    <form>
+      <label for="loginUsername">Kullanıcı Adı:</label>
+      <input type="text" id="loginUsername" required><br>
+
+      <label for="loginPassword">Şifre:</label>
+      <input type="password" id="loginPassword" required><br>
+
+      <input type="submit" value="Giriş Yap" onclick="login()">
+    </form>
+    <p>Hesabınız yok mu? <a href="#" onclick="showRegisterPage()">Kayıt Ol</a></p>
+  </div>
+
+  <div id="registerPage" style="display: none;">
+    <h2>Kayıt Ol</h2>
+    <form>
+      <label for="registerUsername">Kullanıcı Adı:</label>
+      <input type="text" id="registerUsername" required><br>
+
+      <label for="registerPassword">Şifre:</label>
+      <input type="password" id="registerPassword" required><br>
+
+      <input type="submit" value="Kayıt Ol" onclick="register()">
+    </form>
+    <p>Zaten bir hesabınız var mı? <a href="#" onclick="showLoginPage()">Giriş Yap</a></p>
+  </div>
+
+  <div id="loggedInMessage" style="display: none;">
+    <h2>Hoşgeldiniz</h2>
+    <p id="loggedInUsername"></p>
+  </div>
+</body>
+</html>-->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giris Sayfasi</title>
+   </head>
+   <body>
+    <form method="POST" action="">
+   <input type="text" name="username" placeholder="Kullanici adi"><br>
+   <input type="password" name="password" placeholder="Sifre"><br>
+   <button type="submit"> Giris yap</button>
+
+
+    </form>
+    
+   </body>
+   </html>
