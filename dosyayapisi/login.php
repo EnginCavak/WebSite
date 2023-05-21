@@ -38,10 +38,10 @@ BLOK;
         if (!empty($_POST)) {
 
             if ($_POST['kullanici_adi'] == 'test' && $_POST['kullanici_sifre'] == '123') {
-                 header('location:http://localhost/dosyayapisi/index.php');
+                 header('location:http://localhost/dosyayapisi/index.html');
             } else {
                 
-                header('location: http://localhost/dosyayapisi/login.php');
+                header('location: http://localhost/dosyayapisi/login.html');
                 
             }
            
