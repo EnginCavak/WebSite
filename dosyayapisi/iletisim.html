@@ -1,0 +1,173 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSitem</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <style>
+
+    </style>
+
+
+</head>
+
+
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Anasayfa </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="iletisim.html">İletisim</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="Sehrim.html">Şehrim </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        Hakkımda
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="ozgecmis.html">Özgeçmiş</a>
+                        <a class="dropdown-item" href="takimimiz.html">Takımımız</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="ilgialanlarim.html">İlgi alanlarım</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled">Login</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+
+
+
+    <script>
+        function validateForm() {
+            // İsim kontrolü
+            var name = document.getElementById('name').value;
+            if (name.trim() === '') {
+                alert('İsim alanı boş bırakılamaz');
+                return false;
+            }
+
+            // E-posta kontrolü
+            var email = document.getElementById('email').value;
+            var emailRegex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
+            if (email.trim() === '') {
+                alert('E-posta alanı boş bırakılamaz');
+                return false;
+            } else if (!emailRegex.test(email)) {
+                alert('Geçerli bir e-posta adresi girin');
+                return false;
+            }
+
+            
+        }
+        function clearForm() {
+            document.getElementById("MyForm").reset();
+        }
+
+
+    </script>
+
+    
+
+    <div id="app">
+        <h1>İletişim Formu</h1>
+
+        <form action="iletisimiki.php" method="POST" onsubmit="return validateForm()" id="MyForm">
+            <label for="name">İsim:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-posta:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Okul Numarası:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="message">Mesaj:</label>
+            <textarea id="message" name="message" required></textarea>
+
+
+            <label for="gender">Cinsiyet:</label>
+            <input type="radio" id="male" name="gender" value="Erkek">
+            <label for="male">Erkek</label>
+
+            <input type="radio" id="female" name="gender" value="Kadın">
+            <label for="female">Kadın</label>
+
+
+
+
+            <button type="button" onclick="clearForm()">Temizle</button>
+
+            
+            <button type="submit">Gönder</button>
+        </form>
+    </div>
+
+
+
+
+
+
+
+<br>
+<br>
+
+    <h2>Yukarıya bilgileri girip formu kaydedin ve gönderin ve başka bir sayfaya kaydedilen formu görüntüleyin ya da hepsini temizleyin
+
+    </h2>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
