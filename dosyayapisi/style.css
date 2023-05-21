@@ -1,0 +1,38 @@
+.stilim {
+    font: 12pt Tahoma, Verdana;
+    color: #FF0000;
+}
+
+td.stilim {
+    width: 100px;
+    font: 10pt Tahoma, Verdana;
+    color: #000000;
+}
+
+body {
+    background-color: #EFEFEF;
+    font: 8pt Tahoma, Verdana;
+    color: #000000;
+}
+
+td {
+    font: 10pt Tahoma, Verdana;
+    color: #FF0000;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#yazi {
+    font-family: 'Roboto', sans-serif;
+
+    font-size: 28px;
+    /* Yazı büyüklüğü değeri */
+}
